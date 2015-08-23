@@ -75,4 +75,4 @@ colnames(mean2data) <- featurename
 Activity<- rep((sort(activity)),30)
 Subject <- sort(rep(1:30, 6))
 tidy <-cbind(Subject, Activity, mean2data)
-
+write.table(tidy, "tidy.txt", row.name=FALSE )
